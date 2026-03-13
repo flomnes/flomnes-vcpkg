@@ -1,0 +1,51 @@
+{
+  "name": "or-tools",
+  "version": "9.15",
+  "description": "Google OR-Tools is an open-source software suite for optimization, including linear and integer programming, routing, and constraint programming.",
+  "homepage": "https://github.com/google/or-tools",
+  "license": "Apache-2.0",
+  "supports": "!uwp",
+  "dependencies": [
+    "abseil",
+    "bzip2",
+    "eigen3",
+    {
+      "name": "protobuf",
+      "host": true
+    },
+    "protobuf",
+    "re2",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    "zlib"
+  ],
+  "features": {
+    "coinor": {
+      "description": "Enable COIN-OR CBC/CLP based MIP and LP solvers",
+      "dependencies": [
+        "coin-or-cbc",
+        "coin-or-clp",
+        "coin-or-osi",
+        "coinutils"
+      ]
+    },
+    "glpk": {
+      "description": "Enable GLPK solver support",
+      "dependencies": [
+        "glpk"
+      ]
+    },
+    "highs": {
+      "description": "Enable HiGHS solver support",
+      "dependencies": [
+        "highs"
+      ]
+    }
+  }
+}
