@@ -7384,6 +7384,10 @@
       "baseline": "0.12+20221121",
       "port-version": 1
     },
+    "or-tools": {
+      "baseline": "9.15",
+      "port-version": 0
+    },
     "orange-math": {
       "baseline": "5.0.0",
       "port-version": 0
